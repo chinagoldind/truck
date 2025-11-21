@@ -14,3 +14,41 @@
 	"include": ["src"],
 	"exclude": ["node_modules", "dist", "test"]
 }
+{
+  "outbounds": [
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.microsoft.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "a1b2c3d4-e5f6-7890-g1h2-i3j4k5l6m7n8",
+                "alterId": 0,
+                "email": "user@example.com",
+                "security": "auto",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "reality",
+        "realitySettings": {
+          "show": false,
+          "fingerprint": "chrome",
+          "serverName": "www.microsoft.com",
+          "publicKey": "HpX7pJX7w4jDq5q5x6q8x8v7t6r5e4w3q2e1r2t3y4u5i6o7p8l9k0j",
+          "shortId": "12345678",
+          "spiderX": "/"
+        }
+      },
+      "tag": "proxy"
+    }
+  ]
+}
